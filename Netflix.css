@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.main {
+  background-image: url(Assets/BG.jpg);
+  background-size: max(1400px, 100vw);
+  height: 85vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.main .box {
+  opacity: 0.75;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+nav {
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+span img {
+  height: 150px;
+  width: 150px;
+  color: #ff202f;
+  position: relative;
+  z-index: 10;
+}
+nav .sign-in {
+  color: #eee;
+  font-family: sans-serif;
+  padding: 9px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: red;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.5s ease;
+  font-family: "Inter", sans-serif;
+}
+nav .sign-in:hover {
+  background-color: rgb(201, 12, 12);
+}
+.hero {
+  font-family: "Poppins", sans-serif;
+  /* height: calc(100% - 160px); */
+  height: 75%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #eee;
+  z-index: 10;
+  gap: 20px;
+}
+.hero span:first-child {
+  font-weight: 900;
+  font-size: 50px;
+}
+.hero span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 800;
+}
+.hero .email-signup {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero .email-signup input {
+  border-radius: 5px;
+  border: 1px solid #a8a3a3;
+  color: #eee;
+  padding: 23px 12px 18px 18px;
+  width: 21rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  margin-right: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.hero .email-signup label {
+  position: absolute;
+  left: 0;
+  left: 15px;
+  top: 50%;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  transform: translateY(-50%);
+  color: #eee;
+  transition: all 0.2s ease;
+}
+.hero .email-signup input:focus ~ label,
+.hero .email-signup input:not(:placeholder-shown) ~ label {
+  top: 8px;
+  font-size: 12px;
+  transform: translateY(0);
+}
+.hero .email-signup input:focus {
+  outline: 2px solid #fff;
+}
+
+.hero .email-signup button {
+  padding: 15px 30px 15px 20px;
+  border-radius: 5px;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  color: #eee;
+  background-color: #e91111;
+  border: none;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.hero .email-signup button:hover {
+  background-color: rgb(190, 12, 12);
+}
+.separation {
+  position: absolute;
+  top: 97%;
+  z-index: 10;
+  height: 4rem;
+  width: 100%;
+  background: linear-gradient(
+    to left,
+    black,
+    rgb(255, 0, 204),
+    red,
+    rgb(255, 0, 204),
+    black
+  );
+  border-top-left-radius: 60%;
+  border-top-right-radius: 60%;
+}
+.separation .curve-out {
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  background: radial-gradient(ellipse at 50% 0, #2e149c, black 75%);
+  top: 11%;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+}
+
+@media (max-width: 460px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  .hero span{
+    text-align: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .hero .email-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+  }
+  .hero .email-signup label {
+    position: absolute;
+    top: 25%;
+  }
+  .hero span:first-child {
+  font-weight: 900;
+  font-size: 45px;
+
+  text-align: center;
+}
+.hero span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 800;
+}
+}
