@@ -177,7 +177,6 @@ nav .sign-in:hover {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
-    flex-shrink: 1;
   }
   .hero .email-signup label {
     position: absolute;
@@ -186,7 +185,6 @@ nav .sign-in:hover {
   .hero span:first-child {
   font-weight: 900;
   font-size: 45px;
-
   text-align: center;
 }
 .hero span:nth-child(2) {
