@@ -11,7 +11,8 @@ body {
 }
 .top {
   background-image: url(Assets/BG.jpg);
-  background-size: max(1400px, 100vw);
+  /* background-size: max(1400px, 100vw); */
+  background-size: cover;
   height: 85vh;
   position: relative;
   background-repeat: no-repeat;
@@ -160,12 +161,17 @@ nav .sign-in:hover {
   border-top-left-radius: 45%;
   border-top-right-radius: 45%;
 }
+@media (max-width:760px){
 
-@media (max-width: 460px) {
+}
+@media (max-width: 900px) {
   nav {
     flex-wrap: wrap;
   }
+
   .hero span{
+    position: relative;
+bottom: 30px;
     text-align: center;
     flex-wrap: wrap;
     margin: auto;
@@ -177,6 +183,8 @@ nav .sign-in:hover {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    position: relative;
+    bottom: 25px;
   }
   .hero .email-signup label {
     position: absolute;
@@ -190,5 +198,9 @@ nav .sign-in:hover {
 .hero span:nth-child(2) {
   font-size: 20px;
   font-weight: 800;
+}
+.top{
+ width: 100%;
+ height: 100%;
 }
 }
