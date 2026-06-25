@@ -6,14 +6,14 @@
 }
 body {
   background-color: black;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
+  /* border-top-left-radius: 50%;
+  border-top-right-radius: 50%; */
 }
 .top {
   background-image: url(Assets/BG.jpg);
-  /* background-size: max(1400px, 100vw); */
+
   background-size: cover;
-  height: 85vh;
+height: max(85vh,45vh);
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
@@ -75,12 +75,25 @@ nav .sign-in:hover {
 }
 .hero span:first-child {
   font-weight: 900;
+  font-size: clamp(1.8rem, 5vw, 3.2rem); /* was: 50px */
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero span:nth-child(2) {
+  font-size: clamp(1rem, 2.5vw, 1.4rem); /* was: 20px fixed */
+  font-weight: 800;
+  text-align: center;
+  padding: 0 1rem;
+}
+/* .hero span:first-child {
+  font-weight: 900;
   font-size: 50px;
 }
 .hero span:nth-child(2) {
   font-size: 20px;
   font-weight: 800;
-}
+} */
 .hero .email-signup {
   display: flex;
   align-items: center;
@@ -118,6 +131,7 @@ nav .sign-in:hover {
 }
 .hero .email-signup input:focus {
   outline: 2px solid #fff;
+  box-sizing: border-box;
 }
 
 .hero .email-signup button {
@@ -162,35 +176,7 @@ nav .sign-in:hover {
   border-top-left-radius: 45%;
   border-top-right-radius: 45%;
 }
-/* @media (max-width:900px){
-  .hero{
-    padding: 20px;
-    text-align: center;
-  }
 
-  .hero .email-signup{
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
-  }
-
-  .hero .email-signup input{
-    width: 90%;
-    margin-right: 0;
-  }
-
-  .hero .email-signup button{
-    width: 90%;
-  }
-
-  .hero span:first-child{
-    font-size: clamp(2rem, 7vw, 3rem);
-  }
-
-  .hero span:nth-child(2){
-    font-size: 18px;
-  }
-} */
 
 @media (max-width: 900px) {
   nav {
@@ -198,29 +184,31 @@ nav .sign-in:hover {
   }
 
   .hero span{
-    position: relative;
-bottom: 30px;
+    position: static;
     text-align: center;
     flex-wrap: wrap;
-    margin: auto;
+  
+  padding: 0 0 2rem 0;
   }
   .hero .email-signup {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
     position: relative;
     bottom: 25px;
   }
   .hero .email-signup label {
     position: absolute;
-    top: 25%;
+    /* top: 25%; */
+     top: 22px; 
+    left: 18px
   }
   .hero span:first-child {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -229,11 +217,11 @@ bottom: 30px;
   font-weight: 800;
   flex-wrap: wrap;
 }
-.hero span:nth-child(2){
+.hero span:nth-child(3){
   flex-wrap: wrap;
 }
 .top{
- width: 100%;
- height: 100%;
+
+ background-size: cover;
 }
 }
