@@ -365,6 +365,7 @@ footer ul {
   }
 
   .hero span:nth-child(3) {
+    font-size: 15px;
     flex-wrap: wrap;
   }
     .main {
