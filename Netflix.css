@@ -373,7 +373,10 @@ footer ul {
 .trending-section .trending-movies {
   margin: 2rem 0 0 4rem;
 }
+ .RTJ>h2 {
+  margin: 1.5rem 0 1.5rem 3rem;
  
+}
   .top {
     background-size: cover;
   }
