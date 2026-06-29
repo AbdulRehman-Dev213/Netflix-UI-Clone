@@ -323,7 +323,7 @@ footer ul {
     text-align: center;
     flex-wrap: wrap;
 
-    padding: 0 0 2rem 0;
+    padding: 0 0 3rem 0;
   }
 
   .hero .email-signup {
@@ -334,7 +334,7 @@ footer ul {
     gap: 15px;
     flex-wrap: wrap;
     position: relative;
-    bottom: 25px;
+    bottom: 3.8rem;
   }
 
   .hero .email-signup label {
@@ -351,10 +351,16 @@ footer ul {
   }
 
   .hero-end span:first-child {
-    font-size: 20px;
+    font-size: 15px;
+    flex-wrap: wrap;
     font-weight: 200;
-    padding: 15px;
+  
   }
+
+.hero-end .email-signup{
+  position: relative;
+top: 1rem;
+}
 .hero-end .email-signup input{
   width: 20rem;
 }
@@ -365,7 +371,7 @@ footer ul {
   }
 
   .hero span:nth-child(3) {
-    font-size: 15px;
+  
     flex-wrap: wrap;
   }
     .main {
