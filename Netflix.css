@@ -370,20 +370,24 @@ footer ul {
     .main {
     margin-top: 5rem;
   }
-
+.trending-section .trending-movies {
+  margin: 2rem 0 0 4rem;
+}
+ 
   .top {
     background-size: cover;
   }
 
   .separation .curve-out {
-    border-top-left-radius: 35%;
-    border-top-right-radius: 35%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
   }
 
   .reasons-container {
+    display: grid;
     grid-template-columns: 1fr;
-    width: 80%;
-   
+   padding: 0 25px 0 25px;
+   margin: 10px;
   }
 
   .FAQ h2 {
