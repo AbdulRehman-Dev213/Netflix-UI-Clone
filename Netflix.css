@@ -129,8 +129,8 @@ nav .sign-in:hover {
   transition: all 0.2s ease;
 }
 
-.hero .email-signup input:focus~label,
-.hero .email-signup input:not(:placeholder-shown)~label {
+.hero .email-signup input:focus ~ label,
+.hero .email-signup input:not(:placeholder-shown) ~ label {
   top: 8px;
   font-size: 12px;
   transform: translateY(0);
@@ -167,12 +167,14 @@ nav .sign-in:hover {
   border-bottom: none;
   height: 4rem;
   width: 100%;
-  background: linear-gradient(to left,
-      black,
-      rgb(255, 0, 204),
-      red,
-      rgb(255, 0, 204),
-      black);
+  background: linear-gradient(
+    to left,
+    black,
+    rgb(255, 0, 204),
+    red,
+    rgb(255, 0, 204),
+    black
+  );
   border-top-left-radius: 60%;
   border-top-right-radius: 60%;
 }
@@ -224,7 +226,7 @@ main {
   transform: scale(0.9);
 }
 
-.RTJ>h2 {
+.RTJ > h2 {
   margin: 1.5rem 0 1.5rem 5rem;
   color: var(--primary-color);
 }
@@ -313,7 +315,7 @@ footer ul {
   margin: 15px 0 0 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   nav {
     flex-wrap: wrap;
   }
@@ -331,10 +333,10 @@ footer ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  gap: 15px;
+    gap: 15px;
     flex-wrap: wrap;
     position: relative;
-    
+
     padding: 0 0 7rem 0;
   }
 
@@ -343,9 +345,9 @@ footer ul {
     top: 22px;
     left: 18px;
   }
-.hero .email-signup input{
-  width: 15rem;
-}
+  .hero .email-signup input {
+    width: 15rem;
+  }
   .hero span:first-child {
     font-weight: 900;
     font-size: 30px;
@@ -357,16 +359,15 @@ footer ul {
     font-size: 15px;
     flex-wrap: wrap;
     font-weight: 200;
-  
   }
 
-.hero-end .email-signup{
-  position: relative;
-top: 1rem;
-}
-.hero-end .email-signup input{
-  width: 20rem;
-}
+  .hero-end .email-signup {
+    position: relative;
+    top: 1rem;
+  }
+  .hero-end .email-signup input {
+    width: 20rem;
+  }
   .hero span:nth-child(2) {
     font-size: 20px;
     font-weight: 800;
@@ -374,19 +375,17 @@ top: 1rem;
   }
 
   .hero span:nth-child(3) {
-  
     flex-wrap: wrap;
   }
-    .main {
+  .main {
     margin-top: 5rem;
   }
-.trending-section .trending-movies {
-  margin: 2rem 0 0 4rem;
-}
- .RTJ>h2 {
-  margin: 1.5rem 0 1.5rem 3rem;
- 
-}
+  .trending-section .trending-movies {
+    margin: 2rem 0 0 4rem;
+  }
+  .RTJ > h2 {
+    margin: 1.5rem 0 1.5rem 3rem;
+  }
   .top {
     background-size: cover;
   }
@@ -399,26 +398,24 @@ top: 1rem;
   .reasons-container {
     display: grid;
     grid-template-columns: 1fr;
-   padding: 0 25px 0 25px;
-   margin: 10px;
+    padding: 0 25px 0 25px;
+    margin: 10px;
   }
 
   .FAQ h2 {
     margin: 1.5rem 0 1.5rem 2rem;
   }
-.FAQ-Box span:first-child{
-  font-size: 20px;
-  padding-right: 10px;
-}
-.FAQ-Box .plus-icon{
-  font-size: 35px;
-}
+  .FAQ-Box span:first-child {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  .FAQ-Box .plus-icon {
+    font-size: 35px;
+  }
   footer ul {
     display: grid;
-    grid-template-columns:  1fr;
+    grid-template-columns: 1fr;
     gap: 15px;
     margin: 15px 0 0 0;
   }
-
-
 }
